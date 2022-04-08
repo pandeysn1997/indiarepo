@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        select sports You would like to play
+    </p>
+    <select id="selection" onchange="onchangefunction()">
+    <option value="Cricket"> cricket</option>
+    <option value="football">football</option>
+    <option value="badminton">badminton</option>
+
+    </select>
+    <p id="demo"></p>
+    <script>
+        function onchangefunction(){
+            var selectedValue=document.getElementById("selection").value;
+            document.getElementById("demo").innerHTML="your selection is" + selectedValue;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+<script>
+    let searchstring ="My name is sachin pandey and i am the employee of zensar";
+
+    document.getElementById("demo").innerHTML =searchstring.indexOf("sachin",5);
+    document.getElementById("demo1").innerHTML =searchstring.lastIndexOf("sachin");
+    document.getElementById("demo2").innerHTML =searchstring.search(/sachin/i);
+    document.getElementById("demo3").innerHTML =searchstring.match(/zensar/gi);
+    document.getElementById("demo4").innerHTML =searchstring.includes("sachin");
+
+
+</script>
+</body>
+</html>

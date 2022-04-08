@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    
+    <script>
+        let string1="my name is sachin";
+       document.getElementById("demo").innerHTML =string1.slice(6,13);
+       document.getElementById("demo1").innerHTML=string1.substr(6);
+       newstring=string1.replace("sachin","gullu");
+       document.getElementById("demo2").innerHTML=newstring;
+       document.getElementById("demo3").innerHTML=string1.toLocaleUpperCase();
+       concatstring= string1.concat("    "   +   "<br>" + "  working in zensar");
+       document.getElementById("demo4").innerHTML=concatstring;
+        trimstring=concatstring.trim();
+        document.getElementById("demo5").innerHTML=trimstring;
+        document.getElementById("demo6").innerHTML=string1.charCodeAt(0);
+        const stringarray = string1.split("")
+        document.getElementById("demo7").innerHTML=stringarray[3];
+
+
+    </script>
+    
+</body>
+</html>

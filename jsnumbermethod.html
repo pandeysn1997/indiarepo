@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="display1"></p>
+    <p id="display2"></p>
+    <p id="display3"></p>
+    <p id="display4"></p>
+    <p id="display5"></p>
+    <p id="display6"></p>
+    <p id="display7"></p>
+    <p id="display8"></p>
+    <p id="display9"></p>
+    <p id="display10"></p>
+    <p id="display11"></p>
+    <p id="display12"></p>
+    <p id="display13"></p>
+    <p id="display14"></p>
+
+    <script>
+        let number1=10.909999;
+        let number2= Number.MAX_VALUE;
+        let number3= Number.MIN_VALUE;
+        let number4=Number.NEGATIVE_INFINITY;
+        let number7=Number.POSITIVE_INFINITY;
+        let number5=Number.MAX_SAFE_INTEGER;
+        let number6=Number.MIN_SAFE_INTEGER;
+        document.getElementById("display1").innerHTML=number1.toString()+
+        "<br>"+(111).toString();
+        document.getElementById("display2").innerHTML=number1.toExponential(5);
+        document.getElementById("display3").innerHTML=number1.toFixed(4);
+        document.getElementById("display4").innerHTML=number1.toPrecision(5);
+        document.getElementById("display5").innerHTML=number1.valueOf();
+        document.getElementById("display6").innerHTML=Number(true)+"<hr>" + Number(false)+ "<hr>"+ Number("5")+ "<hr>" + Number("20 21");
+        document.getElementById("display7").innerHTML=parseInt(-32)+"<hr>"+ parseInt(10.93666);
+        document.getElementById("display8").innerHTML=parseFloat(-10)+"<hr>"+ parseFloat(10.9366666);
+        document.getElementById("display9").innerHTML= number2;
+        document.getElementById("display10").innerHTML=number3;
+        document.getElementById("display11").innerHTML=number4;
+        document.getElementById("display12").innerHTML=number5;
+        document.getElementById("display13").innerHTML=number6;
+        document.getElementById("display14").innerHTML=number7;
+
+    </script>
+</body>
+</html>
